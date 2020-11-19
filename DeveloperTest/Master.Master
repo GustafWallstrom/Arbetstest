@@ -41,7 +41,7 @@
             <table class="ctable" id="ctable">
                 <thead>
                     <tr>
-                        <th>Id</th>
+                        <th>Ide</th>
                         <th>Guid</th>
                         <th>Datum</th>
                         <th>Svarande</th>

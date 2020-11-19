@@ -15,6 +15,7 @@ Struktur
 I `js/base.js` finns ett globalt helperobjeket som har hand om API-anrop och returnerar `Promise` för anrop mot API:et `LogService.asmx`. Denna service lyssnar på `/api/logservice/[metodnamn]` via POST.
  
  
+
 Uppgifter
 1. Loggar ska kunna hämtas och tas bort via `Guid` istället för löpnummer. Byt `int id` mot en lösning som använder `Guid` i metoderna `Get` och `Delete` i `LogService.asmx`. `LogItem` har redan stöd för `Guid` med property `UniqueId` med behöver även användas i API:et. Klienten behöver även anpassas för detta. Det finns en statisk metod i `Guid.TryParse` man kan använda för att parsa `string` till `Guid`.
  
@@ -26,8 +27,15 @@ Uppgifter
 Fälten för telefonnummer får bara innehålla siffror (0-9), mellanslag samt plus- och minus-tecken (+-). Dvs "+46700-12 12 12" är giltigt men inte "0700:12_12_12".
 Första fältet för första telefonnumret måste anges (får ej lämnas tomt), däremot får andra fältet lämnas tomt.
  
+--------------- FÄRDIGT! -------------------------
+
 5. Designa om skapaformuläret:
     1. Fälten för telefonnummer ska ligga bredvid varandra
+
+
+HUR? flexbox row med omslutande div.
+
+--------------------------------------------------
  
 Kända buggar
 6. Sökningen kan ibland visa samma resultat flera gånger om samma information finns i mer än en property i `LogItem`. Hitta och åtgärda felet.

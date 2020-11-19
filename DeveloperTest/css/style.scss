@@ -24,7 +24,7 @@
 
 
 body {
-    background: url(/images/bg.jpg) no-repeat center center fixed;
+    //background: url(/images/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -78,7 +78,7 @@ $animationTime: .35s;
 
     .input-container, .field {
         position: relative;
-    }
+    } 
 
     input[type=text], input[type=password], textarea {
         font-size: 18px;

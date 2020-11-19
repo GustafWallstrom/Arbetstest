@@ -9,3 +9,91 @@
    vid Core.DAL.DataConnection.Exec(String txt, CommandType type, IDataParameter[] par) i E:\TeamCity\buildAgent\work\653703ac51653369\Core.DAL\DataConnection.cs:rad 363
    vid Core.MessageCenter.MessageCleanTask.Run(Object taskdata) i E:\TeamCity\buildAgent\work\653703ac51653369\Core\MessageCenter\MessageCleanTask.cs:rad 17
    vid Core.Scheduler.Task.<RunTask>b__54_0() i E:\TeamCity\buildAgent\work\653703ac51653369\Core\Scheduler\Task.cs:rad 287
+2020-11-19 08:51:38;Error;Task "MessageCleanTask" didn't run as expected. Error: MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM cMessage WHERE (IsSeen=1 AND Sent<'2020-11-05') OR (Sent<'2020-08-21')' at line 1
+   vid MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   vid MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   vid MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   vid Core.DAL.DataConnection.Exec(String txt, CommandType type, IDataParameter[] par) i E:\TeamCity\buildAgent\work\653703ac51653369\Core.DAL\DataConnection.cs:rad 363
+   vid Core.MessageCenter.MessageCleanTask.Run(Object taskdata) i E:\TeamCity\buildAgent\work\653703ac51653369\Core\MessageCenter\MessageCleanTask.cs:rad 17
+   vid Core.Scheduler.Task.<RunTask>b__54_0() i E:\TeamCity\buildAgent\work\653703ac51653369\Core\Scheduler\Task.cs:rad 287
+2020-11-19 08:53:05;Error;Task "MessageCleanTask" didn't run as expected. Error: MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM cMessage WHERE (IsSeen=1 AND Sent<'2020-11-05') OR (Sent<'2020-08-21')' at line 1
+   vid MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   vid MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   vid MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   vid Core.DAL.DataConnection.Exec(String txt, CommandType type, IDataParameter[] par) i E:\TeamCity\buildAgent\work\653703ac51653369\Core.DAL\DataConnection.cs:rad 363
+   vid Core.MessageCenter.MessageCleanTask.Run(Object taskdata) i E:\TeamCity\buildAgent\work\653703ac51653369\Core\MessageCenter\MessageCleanTask.cs:rad 17
+   vid Core.Scheduler.Task.<RunTask>b__54_0() i E:\TeamCity\buildAgent\work\653703ac51653369\Core\Scheduler\Task.cs:rad 287
+2020-11-19 09:08:09;Error;Task "MessageCleanTask" didn't run as expected. Error: MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM cMessage WHERE (IsSeen=1 AND Sent<'2020-11-05') OR (Sent<'2020-08-21')' at line 1
+   vid MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   vid MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   vid MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   vid Core.DAL.DataConnection.Exec(String txt, CommandType type, IDataParameter[] par) i E:\TeamCity\buildAgent\work\653703ac51653369\Core.DAL\DataConnection.cs:rad 363
+   vid Core.MessageCenter.MessageCleanTask.Run(Object taskdata) i E:\TeamCity\buildAgent\work\653703ac51653369\Core\MessageCenter\MessageCleanTask.cs:rad 17
+   vid Core.Scheduler.Task.<RunTask>b__54_0() i E:\TeamCity\buildAgent\work\653703ac51653369\Core\Scheduler\Task.cs:rad 287
+2020-11-19 09:18:54;Error;Task "MessageCleanTask" didn't run as expected. Error: MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM cMessage WHERE (IsSeen=1 AND Sent<'2020-11-05') OR (Sent<'2020-08-21')' at line 1
+   vid MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   vid MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   vid MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   vid Core.DAL.DataConnection.Exec(String txt, CommandType type, IDataParameter[] par) i E:\TeamCity\buildAgent\work\653703ac51653369\Core.DAL\DataConnection.cs:rad 363
+   vid Core.MessageCenter.MessageCleanTask.Run(Object taskdata) i E:\TeamCity\buildAgent\work\653703ac51653369\Core\MessageCenter\MessageCleanTask.cs:rad 17
+   vid Core.Scheduler.Task.<RunTask>b__54_0() i E:\TeamCity\buildAgent\work\653703ac51653369\Core\Scheduler\Task.cs:rad 287
+2020-11-19 09:21:55;Error;Task "MessageCleanTask" didn't run as expected. Error: MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM cMessage WHERE (IsSeen=1 AND Sent<'2020-11-05') OR (Sent<'2020-08-21')' at line 1
+   vid MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   vid MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   vid MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   vid Core.DAL.DataConnection.Exec(String txt, CommandType type, IDataParameter[] par) i E:\TeamCity\buildAgent\work\653703ac51653369\Core.DAL\DataConnection.cs:rad 363
+   vid Core.MessageCenter.MessageCleanTask.Run(Object taskdata) i E:\TeamCity\buildAgent\work\653703ac51653369\Core\MessageCenter\MessageCleanTask.cs:rad 17
+   vid Core.Scheduler.Task.<RunTask>b__54_0() i E:\TeamCity\buildAgent\work\653703ac51653369\Core\Scheduler\Task.cs:rad 287
+2020-11-19 09:45:50;Error;Task "MessageCleanTask" didn't run as expected. Error: MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM cMessage WHERE (IsSeen=1 AND Sent<'2020-11-05') OR (Sent<'2020-08-21')' at line 1
+   vid MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   vid MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   vid MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   vid Core.DAL.DataConnection.Exec(String txt, CommandType type, IDataParameter[] par) i E:\TeamCity\buildAgent\work\653703ac51653369\Core.DAL\DataConnection.cs:rad 363
+   vid Core.MessageCenter.MessageCleanTask.Run(Object taskdata) i E:\TeamCity\buildAgent\work\653703ac51653369\Core\MessageCenter\MessageCleanTask.cs:rad 17
+   vid Core.Scheduler.Task.<RunTask>b__54_0() i E:\TeamCity\buildAgent\work\653703ac51653369\Core\Scheduler\Task.cs:rad 287
+2020-11-19 09:48:55;Error;Task "MessageCleanTask" didn't run as expected. Error: MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM cMessage WHERE (IsSeen=1 AND Sent<'2020-11-05') OR (Sent<'2020-08-21')' at line 1
+   vid MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   vid MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   vid MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   vid Core.DAL.DataConnection.Exec(String txt, CommandType type, IDataParameter[] par) i E:\TeamCity\buildAgent\work\653703ac51653369\Core.DAL\DataConnection.cs:rad 363
+   vid Core.MessageCenter.MessageCleanTask.Run(Object taskdata) i E:\TeamCity\buildAgent\work\653703ac51653369\Core\MessageCenter\MessageCleanTask.cs:rad 17
+   vid Core.Scheduler.Task.<RunTask>b__54_0() i E:\TeamCity\buildAgent\work\653703ac51653369\Core\Scheduler\Task.cs:rad 287
+2020-11-19 09:54:15;Error;Task "MessageCleanTask" didn't run as expected. Error: MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM cMessage WHERE (IsSeen=1 AND Sent<'2020-11-05') OR (Sent<'2020-08-21')' at line 1
+   vid MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   vid MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   vid MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   vid MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   vid MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   vid Core.DAL.DataConnection.Exec(String txt, CommandType type, IDataParameter[] par) i E:\TeamCity\buildAgent\work\653703ac51653369\Core.DAL\DataConnection.cs:rad 363
+   vid Core.MessageCenter.MessageCleanTask.Run(Object taskdata) i E:\TeamCity\buildAgent\work\653703ac51653369\Core\MessageCenter\MessageCleanTask.cs:rad 17
+   vid Core.Scheduler.Task.<RunTask>b__54_0() i E:\TeamCity\buildAgent\work\653703ac51653369\Core\Scheduler\Task.cs:rad 287
