@@ -1,0 +1,18 @@
+.left{float:left}
+.right{float:right}
+.text-left{text-align:left}
+.text-right{text-align:right}
+.text-center{text-align:center}
+.pointer{cursor:pointer}
+.hide{display:none}
+.no-ul,.no-ul li{list-style:none;margin:0;padding:0}
+.cl{clear:both}
+.cf:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.cf{display:inline-block}
+html[xmlns] .cf{display:block}
+* html .cf{height:1%}
+@media only screen and (max-width:767px){.left,.right{float:none}
+.hide-for-mobile{display:none}
+.show-for-mobile{display:block}
+.no-left{margin-left:0!important;border-left:0!important;padding-left:0!important}
+}

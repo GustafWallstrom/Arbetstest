@@ -1,0 +1,17 @@
+ul.tabs li {
+  display: inline-block;
+  margin-right: 5px; }
+ul.tabs a {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  display: inline-block; }
+ul.tabs li.tbactive a {
+  background-color: #fafafa; }
+ul.tabs li.hiddentab {
+  display: none; }
+
+.layoutmode ul.tabs li.hiddentab {
+  display: inline-block;
+  opacity: 0.5; }
+
+/*# sourceMappingURL=tabs.css.map */

@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23C043DC-23B2-41EA-8951-C398209088E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeveloperTest</RootNamespace>
+    <AssemblyName>DeveloperTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Core, Version=2.0.6577.19383, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\deps\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.DAL, Version=2.1.6577.19381, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\deps\Core.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.ImageModule, Version=1.0.6577.19386, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\deps\Core.ImageModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Interfaces, Version=1.0.6577.19382, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\deps\Core.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.WebControls, Version=1.2.6577.19386, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\deps\Core.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\placeholder.txt" />
+    <Content Include="App_Themes\Default\placeholder.txt" />
+    <Content Include="Controls\AllLogItems.ascx" />
+    <Content Include="css\checkout.css">
+      <DependentUpon>checkout.scss</DependentUpon>
+    </Content>
+    <Content Include="css\flags\flag_denmark.png" />
+    <Content Include="css\flags\flag_finland.png" />
+    <Content Include="css\flags\flag_norway.png" />
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\img\active.gif" />
+    <Content Include="css\img\bg1.jpg" />
+    <Content Include="css\img\chk.png" />
+    <Content Include="css\img\chkbox.png" />
+    <Content Include="css\img\div.jpg" />
+    <Content Include="css\img\expand.png" />
+    <Content Include="css\img\flow.png" />
+    <Content Include="css\img\has-flyout.png" />
+    <Content Include="css\img\instock.gif" />
+    <Content Include="css\img\mviko2.png" />
+    <Content Include="css\img\openbox.png" />
+    <Content Include="css\img\reabig.png" />
+    <Content Include="css\img\rearibbon.png" />
+    <Content Include="css\img\seek.png" />
+    <Content Include="css\img\sel_hover.png" />
+    <Content Include="css\img\shop\ajax-loader.gif" />
+    <Content Include="css\img\shop\cart.png" />
+    <Content Include="css\img\shop\cartclose.png" />
+    <Content Include="css\img\shop\cartremove.png" />
+    <Content Include="css\img\shop\cartticker.png" />
+    <Content Include="css\img\toplevel-flyout.png" />
+    <Content Include="css\img\up.png" />
+    <Content Include="css\i\err.png" />
+    <Content Include="css\i\findorg.png" />
+    <Content Include="css\i\foundorg.png" />
+    <Content Include="css\i\i.png" />
+    <Content Include="css\i\ibig.png" />
+    <Content Include="css\i\member.png" />
+    <Content Include="css\scss\base.css">
+      <DependentUpon>base.scss</DependentUpon>
+    </Content>
+    <Content Include="css\scss\base.min.css">
+      <DependentUpon>base.scss</DependentUpon>
+    </Content>
+    <Content Include="css\scss\extra\alerts.css" />
+    <Content Include="css\scss\extra\buttons.css" />
+    <Content Include="css\scss\extra\buttons.min.css" />
+    <Content Include="css\scss\extra\comments.css" />
+    <Content Include="css\scss\extra\headroom.css" />
+    <Content Include="css\scss\extra\navbar.css" />
+    <Content Include="css\scss\extra\navbar.min.css" />
+    <Content Include="css\scss\extra\plusslider.css" />
+    <Content Include="css\scss\extra\pop.css" />
+    <Content Include="css\scss\extra\print.css" />
+    <Content Include="css\scss\extra\rotation.css" />
+    <Content Include="css\scss\extra\rotation.min.css" />
+    <Content Include="css\scss\extra\search.css" />
+    <Content Include="css\scss\extra\selectbox.css" />
+    <Content Include="css\scss\extra\tabs.css" />
+    <Content Include="css\scss\extra\treenav.css" />
+    <Content Include="css\scss\extra\treenav.min.css" />
+    <Content Include="css\scss\fontawesome\font-awesome.css" />
+    <Content Include="css\scss\shop\base.css" />
+    <Content Include="css\scss\shop\base.min.css" />
+    <Content Include="css\scss\shop\countrysel.css" />
+    <Content Include="css\scss\shop\countrysel.min.css" />
+    <Content Include="css\scss\shop\filter.css">
+      <DependentUpon>filter.scss</DependentUpon>
+    </Content>
+    <Content Include="css\scss\shop\filter.min.css" />
+    <Content Include="css\scss\shop\login.css" />
+    <Content Include="css\scss\shop\login.min.css" />
+    <Content Include="css\scss\shop\noprocess.css" />
+    <Content Include="css\scss\shop\noprocess.min.css" />
+    <Content Include="css\scss\shop\quickbuy.css" />
+    <Content Include="css\scss\shop\quickbuy.min.css" />
+    <Content Include="css\settings.css">
+      <DependentUpon>settings.scss</DependentUpon>
+    </Content>
+    <Content Include="css\style.css">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
+    <Content Include="css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\up-arrow-dark.png" />
+    <Content Include="images\up-arrow.png" />
+    <Content Include="js\base.js" />
+    <Content Include="js\moment.js" />
+    <Content Include="LogService.asmx" />
+    <Content Include="Templates\FormPage.aspx" />
+    <Content Include="Temp\placeholder.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\LogItemHelper.cs" />
+    <Compile Include="DAL\LogItem.cs" />
+    <Compile Include="Controls\AllLogItems.ascx.cs">
+      <DependentUpon>AllLogItems.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AllLogItems.ascx.designer.cs">
+      <DependentUpon>AllLogItems.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LogService.asmx.cs">
+      <DependentUpon>LogService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\TreeMenu.ascx.cs">
+      <DependentUpon>TreeMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TreeMenu.ascx.designer.cs">
+      <DependentUpon>TreeMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\FormPage.aspx.cs">
+      <DependentUpon>FormPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\FormPage.aspx.designer.cs">
+      <DependentUpon>FormPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Startpage.aspx.cs">
+      <DependentUpon>Startpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Startpage.aspx.designer.cs">
+      <DependentUpon>Startpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\TreeMenu.ascx" />
+    <Content Include="Master.Master" />
+    <Content Include="Templates\Startpage.aspx" />
+    <Content Include="Templates\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\scss\base.scss" />
+    <Content Include="css\scss\blockgrid.scss" />
+    <Content Include="css\scss\extra\alerts.scss" />
+    <Content Include="css\scss\extra\buttons.scss" />
+    <Content Include="css\scss\extra\comments.scss" />
+    <Content Include="css\scss\extra\navbar.scss" />
+    <Content Include="css\scss\extra\print.scss" />
+    <Content Include="css\scss\extra\rotation.scss" />
+    <Content Include="css\scss\extra\search.scss" />
+    <Content Include="css\scss\extra\treenav.scss" />
+    <Content Include="css\scss\global.scss" />
+    <Content Include="css\scss\grid.scss" />
+    <Content Include="css\scss\reset.scss" />
+    <Content Include="css\scss\resetextra.scss" />
+    <Content Include="css\settings.scss" />
+    <Content Include="css\style.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\checkout.scss" />
+    <Content Include="css\scss\extra\selectbox.scss" />
+    <Content Include="css\scss\shop\base.scss" />
+    <Content Include="css\scss\shop\countrysel.scss" />
+    <Content Include="css\scss\shop\filter.scss" />
+    <Content Include="css\scss\shop\login.scss" />
+    <Content Include="css\scss\shop\noprocess.scss" />
+    <Content Include="css\scss\shop\quickbuy.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\responsive.scss" />
+    <Content Include="css\scss\base.css.map" />
+    <Content Include="css\scss\extra\alerts.css.map" />
+    <Content Include="css\scss\extra\headroom.css.map" />
+    <Content Include="css\scss\extra\headroom.scss" />
+    <Content Include="css\scss\extra\navicon.scss" />
+    <Content Include="css\scss\extra\plusslider.css.map" />
+    <Content Include="css\scss\extra\plusslider.scss" />
+    <Content Include="css\scss\extra\pop.scss" />
+    <Content Include="css\scss\extra\print.css.map" />
+    <Content Include="css\scss\extra\selectbox.css.map" />
+    <Content Include="css\scss\extra\tabs.css.map" />
+    <Content Include="css\scss\extra\tabs.scss" />
+    <Content Include="css\scss\shop\countrysel.css.map" />
+    <Content Include="css\scss\shop\noprocess.css.map" />
+    <Content Include="css\scss\_animate.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\scss\animations\attention-seekers\_bounce.scss" />
+    <Content Include="css\scss\animations\attention-seekers\_flash.scss" />
+    <Content Include="css\scss\animations\attention-seekers\_pulse.scss" />
+    <Content Include="css\scss\animations\attention-seekers\_shake.scss" />
+    <Content Include="css\scss\animations\attention-seekers\_swing.scss" />
+    <Content Include="css\scss\animations\attention-seekers\_tada.scss" />
+    <Content Include="css\scss\animations\attention-seekers\_wiggle.scss" />
+    <Content Include="css\scss\animations\attention-seekers\_wobble.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\scss\animations\bounce-enter\_bounceIn.scss" />
+    <Content Include="css\scss\animations\bounce-enter\_bounceInDown.scss" />
+    <Content Include="css\scss\animations\bounce-enter\_bounceInLeft.scss" />
+    <Content Include="css\scss\animations\bounce-enter\_bounceInRight.scss" />
+    <Content Include="css\scss\animations\bounce-enter\_bounceInUp.scss" />
+    <Content Include="css\scss\animations\bounce-exit\_bounceOut.scss" />
+    <Content Include="css\scss\animations\bounce-exit\_bounceOutDown.scss" />
+    <Content Include="css\scss\animations\bounce-exit\_bounceOutLeft.scss" />
+    <Content Include="css\scss\animations\bounce-exit\_bounceOutRight.scss" />
+    <Content Include="css\scss\animations\bounce-exit\_bounceOutUp.scss" />
+    <Content Include="css\scss\animations\fade-enter\_fadeIn.scss" />
+    <Content Include="css\scss\animations\fade-enter\_fadeInDown.scss" />
+    <Content Include="css\scss\animations\fade-enter\_fadeInDownBig.scss" />
+    <Content Include="css\scss\animations\fade-enter\_fadeInLeft.scss" />
+    <Content Include="css\scss\animations\fade-enter\_fadeInLeftBig.scss" />
+    <Content Include="css\scss\animations\fade-enter\_fadeInRight.scss" />
+    <Content Include="css\scss\animations\fade-enter\_fadeInRightBig.scss" />
+    <Content Include="css\scss\animations\fade-enter\_fadeInUp.scss" />
+    <Content Include="css\scss\animations\fade-enter\_fadeInUpBig.scss" />
+    <Content Include="css\scss\animations\fade-exit\_fadeOut.scss" />
+    <Content Include="css\scss\animations\fade-exit\_fadeOutDown.scss" />
+    <Content Include="css\scss\animations\fade-exit\_fadeOutDownBig.scss" />
+    <Content Include="css\scss\animations\fade-exit\_fadeOutLeft.scss" />
+    <Content Include="css\scss\animations\fade-exit\_fadeOutLeftBig.scss" />
+    <Content Include="css\scss\animations\fade-exit\_fadeOutRight.scss" />
+    <Content Include="css\scss\animations\fade-exit\_fadeOutRightBig.scss" />
+    <Content Include="css\scss\animations\fade-exit\_fadeOutUp.scss" />
+    <Content Include="css\scss\animations\fade-exit\_fadeOutUpBig.scss" />
+    <Content Include="css\scss\animations\flippers\_flip.scss" />
+    <Content Include="css\scss\animations\flippers\_flipInX.scss" />
+    <Content Include="css\scss\animations\flippers\_flipInY.scss" />
+    <Content Include="css\scss\animations\flippers\_flipOutX.scss" />
+    <Content Include="css\scss\animations\flippers\_flipOutY.scss" />
+    <Content Include="css\scss\animations\helpers\_base.scss" />
+    <Content Include="css\scss\animations\helpers\_mixins.scss" />
+    <Content Include="css\scss\animations\helpers\_settings.scss" />
+    <Content Include="css\scss\animations\lightspeed\_lightSpeedIn.scss" />
+    <Content Include="css\scss\animations\lightspeed\_lightSpeedOut.scss" />
+    <Content Include="css\scss\animations\rotate-enter\_rotateIn.scss" />
+    <Content Include="css\scss\animations\rotate-enter\_rotateInDownLeft.scss" />
+    <Content Include="css\scss\animations\rotate-enter\_rotateInDownRight.scss" />
+    <Content Include="css\scss\animations\rotate-enter\_rotateInUpLeft.scss" />
+    <Content Include="css\scss\animations\rotate-enter\_rotateInUpRight.scss" />
+    <Content Include="css\scss\animations\rotate-exit\_rotateOut.scss" />
+    <Content Include="css\scss\animations\rotate-exit\_rotateOutDownLeft.scss" />
+    <Content Include="css\scss\animations\rotate-exit\_rotateOutDownRight.scss" />
+    <Content Include="css\scss\animations\rotate-exit\_rotateOutUpLeft.scss" />
+    <Content Include="css\scss\animations\rotate-exit\_rotateOutUpRight.scss" />
+    <Content Include="css\scss\animations\slide-enter\_slideInDown.scss" />
+    <Content Include="css\scss\animations\slide-enter\_slideInLeft.scss" />
+    <Content Include="css\scss\animations\slide-enter\_slideInRight.scss" />
+    <Content Include="css\scss\animations\slide-enter\_slideInUp.scss" />
+    <Content Include="css\scss\animations\slide-exit\_slideOutDown.scss" />
+    <Content Include="css\scss\animations\slide-exit\_slideOutLeft.scss" />
+    <Content Include="css\scss\animations\slide-exit\_slideOutRight.scss" />
+    <Content Include="css\scss\animations\slide-exit\_slideOutUp.scss" />
+    <Content Include="css\scss\animations\special\_hinge.scss" />
+    <Content Include="css\scss\animations\special\_rollIn.scss" />
+    <Content Include="css\scss\animations\special\_rollOut.scss" />
+    <Content Include="css\scss\animations\zoom-enter\_zoomIn.scss" />
+    <Content Include="css\scss\animations\zoom-enter\_zoomInDown.scss" />
+    <Content Include="css\scss\animations\zoom-enter\_zoomInLeft.scss" />
+    <Content Include="css\scss\animations\zoom-enter\_zoomInRight.scss" />
+    <Content Include="css\scss\animations\zoom-enter\_zoomInUp.scss" />
+    <Content Include="css\scss\animations\zoom-exit\_zoomOut.scss" />
+    <Content Include="css\scss\animations\zoom-exit\_zoomOutDown.scss" />
+    <Content Include="css\scss\animations\zoom-exit\_zoomOutLeft.scss" />
+    <Content Include="css\scss\animations\zoom-exit\_zoomOutRight.scss" />
+    <Content Include="css\scss\animations\zoom-exit\_zoomOutUp.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\scss\fontawesome\font-awesome.css.map" />
+    <Content Include="css\scss\fontawesome\font-awesome.scss" />
+    <Content Include="css\scss\fontawesome\_animated.scss" />
+    <Content Include="css\scss\fontawesome\_bordered-pulled.scss" />
+    <Content Include="css\scss\fontawesome\_core.scss" />
+    <Content Include="css\scss\fontawesome\_fixed-width.scss" />
+    <Content Include="css\scss\fontawesome\_icons.scss" />
+    <Content Include="css\scss\fontawesome\_larger.scss" />
+    <Content Include="css\scss\fontawesome\_list.scss" />
+    <Content Include="css\scss\fontawesome\_mixins.scss" />
+    <Content Include="css\scss\fontawesome\_path.scss" />
+    <Content Include="css\scss\fontawesome\_rotated-flipped.scss" />
+    <Content Include="css\scss\fontawesome\_screen-reader.scss" />
+    <Content Include="css\scss\fontawesome\_stacked.scss" />
+    <Content Include="css\scss\fontawesome\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55971</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4199/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,206 @@
+@mixin popup($bg,$pad:$clmGutter/2){
+    //border: solid 1px darken($bg,30);
+    background: $bg;
+    padding: $pad;
+    margin-top: 100px;
+    max-width: 768px;
+    border-radius: 3px;
+    box-shadow:  0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+.close {
+    position:absolute;
+    top:2px;
+    right:2px;
+    width:24px;
+    height:24px;
+    z-index:230;
+    cursor:pointer;
+    background:transparent url(img/shop/cartclose.png) no-repeat top left;
+    span {
+        display:none;
+    }
+}
+
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pointer {
+    cursor:pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.no-ul, .no-ul li {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.cl
+{
+    clear: both;
+}
+
+.cf:after
+{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.cf
+{
+    display: inline-block;
+}
+
+html[xmlns] .cf
+{
+    display: block;
+}
+
+* html .cf
+{
+    height: 1%;
+}
+body:not(.layoutmode) .hide, body:not(.layoutmode) .Hide {
+    display: none;
+}
+.layoutmode .hide, .layoutmode .Hide {
+    opacity: 0.5;
+}
+
+.banner-default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    background-size:cover;
+    flex: none;
+
+    .text-center {
+        color:#fff;
+    }
+}
+
+.property-list{
+    .prop-key, .prop-value {
+        display: inline-block;
+        width: 50%;
+    }
+    li {
+        padding: 10px 0;
+        border-bottom: 1px solid $linecolor;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    .chk {
+        //text-indent: -9999px;
+        &:before {
+            font-family: FontAwesome;
+        }
+        &.chk-on:before {
+            content: "\f00c";
+        }
+    }
+}
+
+$fadeTime: 200ms;
+
+/*.lazy-img {
+    width: 100%;
+}*/
+
+.lazy-img-fade {
+    opacity: 0.5;
+    filter: blur(10px);
+}
+
+.lazy-img-loaded {
+    transition: filter $fadeTime, opacity $fadeTime;
+    opacity: 1;
+    filter: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .lazy-img-fade {
+        filter: blur(4px);
+    }
+
+    .lazy-img-loaded {
+        opacity: 1;
+        filter: none;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .left, .right {
+        float:none;
+    }
+    .hide-for-mobile, body:not(.layoutmode) .HideMobile {
+        display:none;
+    }
+    .HideMobile {
+        opacity: 0.5;
+    }
+    .show-for-mobile {
+        display:block;
+    }
+    .no-left {
+        margin-left:0 !important;
+        border-left:0 !important;
+        padding-left:0 !important;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    body:not(.layoutmode) .HideTablet {
+        display:none;
+    }
+    .HideTablet {
+        opacity: 0.5;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    body:not(.layoutmode) .HideDesktop {
+        display:none;
+    }
+    .HideDesktop {
+        opacity: 0.5;
+    }
+}

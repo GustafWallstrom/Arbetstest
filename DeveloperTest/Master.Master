@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="DeveloperTest.Master" %>
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+<head id="Head1" runat="server">
+    <title>www.DeveloperTest.se</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <meta name="viewport" content="initial-scale = 1.0" />
+    <meta charset="utf-8" />
+
+    <asp:ContentPlaceHolder ID="headcp" runat="server"></asp:ContentPlaceHolder>
+
+    <Core:ResourceCacheCss runat="server" File="/css/style.min.css" />
+</head>
+<body class="flex">
+    <form id="form1" runat="server">
+        <asp:LoginView runat="server" ID="exloggedin">
+            <LoggedInTemplate>
+                <div class="loggedinbtns">
+                    <a href="<%# CreatePage.PageLink %>" class="btn create">Skapa ny</a>
+                    <a href="<%# LogPage.PageLink %>" class="btn">Loggar</a>
+                    <asp:LinkButton runat="server" ID="logout" OnClick="logout_Click" Text='Logga ut' CssClass="btn logout" />    
+                </div>
+            </LoggedInTemplate>
+        </asp:LoginView>
+        <div id="pagecnt">
+            <asp:ContentPlaceHolder ID="cph1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div id="foot" class="row">
+            <div class="c12 clms">
+                <p class="text-center">
+                    <a href="https://empori.se">Empori</a>
+                </p>
+            </div>
+        </div>
+        <div class="cov" style="display: none;">
+            <div class="close"></div>
+            <div class="btn edit" id="editrow">Redigera</div>
+            <div class="btn del" id="delrow">Ta bort</div>
+            <table class="ctable" id="ctable">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Guid</th>
+                        <th>Datum</th>
+                        <th>Svarande</th>
+                        <th>Företag</th>
+                        <th>Kontaktperson</th>
+                        <th>Telefon 1</th>
+                        <th>Telefon 2</th>
+                        <th>E-post</th>
+                        <th>Fråga</th>
+                        <th>Svar</th>
+                        <th>Åtgärd/kommentar</th>
+                        <th>Redigerad av</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </form>
+
+    <script>
+        ql.postload('/js/base.js');
+    </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+﻿@import "http://fonts.googleapis.com/css?family=Open+Sans:300,400,700";
+
+@import "settings.scss";
+
+@import "scss/global.scss";
+@import "scss/reset.scss";
+@import "scss/resetextra.scss";
+@import "scss/base.scss";
+@import "scss/grid.scss";
+//@import "scss/extra/treenav";
+@import "scss/extra/print.scss";
+//@import "scss/extra/comments";
+@import "scss/extra/buttons.scss";
+//@import "scss/extra/alerts";
+@import "scss/extra/search.scss";
+@import "scss/extra/navbar.scss";
+@import "scss/extra/treenav.scss";
+@import "scss/extra/rotation.scss";
+@import "scss/shop/base.scss";
+@import "scss/shop/countrysel.scss";
+@import "scss/shop/login.scss";
+@import "scss/shop/filter.scss";
+@import "scss/shop/quickbuy.scss";
+
+
+body {
+    background: url(/images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.content {
+    background-color: #FFF;
+    @include border-radius(4px);
+    padding: 20px;
+}
+
+h1 {
+    color: #FFF;
+    font-weight: 300;
+    text-align: center;
+    font-size: 48px;
+}
+
+#foot {
+    //background:#2c2c2c url(img/footbg.gif) repeat-x top left;
+    color: #c4c4c4;
+    padding: 20px 0;
+}
+
+/*$hintTextColor: #ACACAC;
+$formTextColor: #333333;
+$labelTextColor: $seccolor;
+$secondInputPadding: 1px .4em 1px .4em; 
+$defaultPadding: 1px;
+$borderSize: 1px;
+$fontSizeForm: 1em;
+$fontSizeLabel: .65em;
+$letterSpacing: 0.012em;
+$inputTop: 1.2em;
+$animations: labelIn, labelOut;
+$animationTime: .35s;
+$ease: cubic-bezier(0.770, 0.000, 0.175, 1.000);*/
+$animationTime: .35s;
+
+.pageform {
+    background: rgba(0,0,0,0.2);
+    @include border-radius(2px);
+    padding: 20px;
+    margin-top: 100px;
+    opacity: 0;
+    animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) $animationTime/2 1 normal forwards;
+    margin-bottom: 35px;
+    margin-left: 40px;
+
+    .input-container, .field {
+        position: relative;
+    }
+
+    input[type=text], input[type=password], textarea {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #EEE;
+        /*&:focus ~ label, &:valid ~ label {
+            top: -20px;
+            font-size: 14px;
+            color: #009688;
+        }*/
+    }
+
+    .password, .username, .field, p {
+        margin-top: 20px;
+
+        label {
+            color: #999;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 10px;
+            font-size: 20px;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+
+        input:focus + label, input.hasvalue + label, textarea:focus + label, textarea.hasvalue + label {
+            font-size: 14px;
+            top: -10px;
+            font-size: 14px;
+            color: $seccolor;
+        }
+
+        input:focus, textarea:focus {
+            border-bottom: 1px solid $seccolor;
+        }
+    }
+
+    .password {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    input[type=submit] {
+        @include border-radius(3px);
+        background-color: $seccolor;
+        display: block;
+        border: 0;
+        text-align: center;
+        width: 100%;
+        color: #FFF;
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    .button {
+        border: 0;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    *:focus {
+        outline: 0;
+    }
+
+    select {
+        line-height: 42px;
+        height: 42px;
+        font-size: 18px;
+        border: 1px solid $linecolor;
+    }
+}
+
+.selyear {
+    padding: 10px 0;
+
+    label {
+        line-height: 42px;
+        font-size: 18px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ctable {
+    border-collapse: collapse;
+
+    th {
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: lighten($seccolor, 45);
+    }
+}
+
+.wd-ov {
+    background-color: #FFF;
+    @include border-radius(4px);
+    padding: 50px 20px 20px 20px;
+    z-index: 2200 !important;
+    overflow-x: auto !important;
+}
+
+.rcinfo {
+    border-bottom: 1px solid $linecolor;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    &:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+}
+
+.btn {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    color: #FFF;
+    background-color: $seccolor;
+    @include border-radius(2px);
+    cursor: pointer;
+
+    &.del {
+        background-color: #EEE;
+        color: #e74c3c;
+        position: absolute;
+        right: 50px;
+        top: 5px;
+        font-weight: bold;
+    }
+
+    &.edit {
+        position: absolute;
+        right: 150px;
+        top: 5px;
+        font-weight: bold;
+    }
+
+    &.block {
+        text-align: center;
+        font-size: 16px;
+        padding: 15px 0;
+        line-height: 100%;
+        display: block;
+        height: auto;
+    }
+}
+
+.scrollup {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: fixed;
+    top: 150px;
+    right: 0;
+    background: url(/images/up-arrow.png) center center no-repeat;
+    display: none;
+    z-index: 1001;
+    cursor: pointer;
+    @include vendor-prefix(box-shadow, 0px 0px 10px rgba(50, 50, 50, 0.3));
+    //	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.3);
+    //	-moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.3);
+    //	box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.3);
+    &.dark {
+        @include vendor-prefix(box-shadow, 0px 0px 10px rgba(255, 255, 255, 0.75));
+        background: url(img/up-arrow-dark.png) center center no-repeat;
+        //		-webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+        //		-moz-box-shadow:    0px 0px 10px rgba(255, 255, 255, 0.75);
+        //		box-shadow:         0px 0px 10px rgba(255, 255, 255, 0.75);
+    }
+}
+
+.personrow {
+    .c3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.loggedinbtns {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 97;
+
+    .btn.logout {
+        background-color: #e95c4e;
+    }
+
+    .btn.create {
+        background-color: #2ecc71;
+    }
+}
+
+.pageform .conflictsearch {
+    margin: 10px 0;
+
+    &:focus {
+        border-bottom: 1px solid $seccolor;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1020px) {
+}
+
+@media only screen and (max-width: 767px) {
+}

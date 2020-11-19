@@ -1,0 +1,110 @@
+.sbtn {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+}
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin vendor-prefix($name, $argument) {
+  #{$name}: $argument;
+  -webkit-#{$name}: $argument;
+  -ms-#{$name}: $argument;
+  -moz-#{$name}: $argument;
+  -o-#{$name}: $argument;
+}
+@mixin bgr($bg,$diff:5)
+{
+	background: $bg;
+	background: -webkit-gradient(linear, left top, left bottom, from(lighten($bg,$diff)), to(darken($bg,$diff)));
+	background: -moz-linear-gradient(top,  lighten($bg,$diff),  darken($bg,$diff));
+}
+
+@mixin btnbg($bg,$diff:5) {
+	@include bgr($bg,$diff);
+
+	&:hover {
+		
+		background: lighten($bg,$diff);
+		background: -webkit-gradient(linear, left top, left bottom, from($bg), to(lighten($bg,$diff/2)));
+		background: -moz-linear-gradient(top,  $bg,  lighten($bg,$diff*2));
+	}
+	&:active {
+		
+		background: darken($bg,$diff);
+		background: -webkit-gradient(linear, left top, left bottom, from(darken($bg,$diff)), to(lighten($bg,$diff)));
+		background: -moz-linear-gradient(top,  darken($bg,$diff),  lighten($bg,$diff));
+	}
+}
+
+@mixin btn($bg,$diff:5, $pad:$btnpadding, $rad: $btnradius, $shadow:0 1px 2px rgba(0,0,0,.2)) {
+	
+	
+	
+	padding: $pad;
+	text-shadow: 1px 1px 2px rgba(255,255,255,.7);
+	-webkit-border-radius: $rad; 
+	-moz-border-radius: $rad;
+	border-radius: $rad;
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+
+	color: $btnTextColor;
+	border: solid 1px darken($bg,$diff);
+	
+	@include btnbg($bg,$diff);
+//	background: $bg;
+//	background: -webkit-gradient(linear, left top, left bottom, from(lighten($bg,$diff)), to(darken($bg,$diff)));
+//	background: -moz-linear-gradient(top,  lighten($bg,$diff),  darken($bg,$diff));
+	
+	&:hover {
+		text-decoration: none;
+//		background: lighten($bg,$diff);
+//		background: -webkit-gradient(linear, left top, left bottom, from($bg), to(lighten($bg,$diff/2)));
+//		background: -moz-linear-gradient(top,  $bg,  lighten($bg,$diff*2));
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+		color: lighten($btnTextColor,15);
+//		background: darken($bg,$diff);
+//		background: -webkit-gradient(linear, left top, left bottom, from(darken($bg,$diff)), to(lighten($bg,$diff)));
+//		background: -moz-linear-gradient(top,  darken($bg,$diff),  lighten($bg,$diff));
+	}
+}
+
+
+
+.sbtn, .c-button button, .button {
+	//@include btn($btncolor,5);
+	background-color: #2980b9;
+	font-weight:bold;
+	color: $btnTextColor;
+    padding: $btnpadding;
+    border-radius: 3px;
+    font-size: 15px;
+}
+/*
+.sbtn:hover, .button:hover, .c-button button:hover {
+	text-decoration: none;
+	background: darken($btncolor,15);
+	background: -webkit-gradient(linear, left top, left bottom, from($btncolor), to(darken($btncolor,25)));
+	background: -moz-linear-gradient(top,  $btncolor,  darken($btncolor,25));
+	
+}
+.sbtn:active, .button:active, .c-button button:active {
+	position: relative;
+	top: 1px;
+	color: lighten($btnTextColor,15);
+	background: darken($btncolor,15);
+	background: -webkit-gradient(linear, left top, left bottom, from(darken($btncolor,15)), to(lighten($btncolor,15)));
+	background: -moz-linear-gradient(top,  darken($btncolor,15),  lighten($btncolor,15));
+	
+}
+*/

@@ -1,0 +1,1 @@
+2020-11-19 08:35:48;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found

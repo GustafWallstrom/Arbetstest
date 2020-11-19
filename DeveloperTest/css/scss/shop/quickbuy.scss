@@ -1,0 +1,14 @@
+.quickbuy 
+{
+	@include popup(#fff,20px);
+	position:relative;
+
+	.qcol {
+		width:40%;
+		float:left;
+		padding:30px;
+	}
+	.q2 {
+		width:60%;
+	}
+}

@@ -1,0 +1,10 @@
+form {
+	div.c-newcomment {
+		background-color:$seccolor;
+		color:#fff;
+	}
+	ul.c-comments .c-reply > div, ul.c-comments .c-edit > div {
+		background-color:lighten($seccolor,15);
+		color:#fff;
+	}
+}

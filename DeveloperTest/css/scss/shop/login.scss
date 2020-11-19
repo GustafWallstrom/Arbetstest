@@ -1,0 +1,79 @@
+#ilogin {
+    @include popup(#fff,$clmGutter);
+	&>.ph {
+		position:relative;
+	}
+	.close {
+		top:-10px;
+		right:-10px;
+	}
+	&.row {
+		min-width:300px;
+	}
+	h2 {
+		margin-top:0;
+		padding-top:0;
+	}
+	* {
+		box-sizing: border-box;
+        -moz-box-sizing: border-box;
+	}
+	.ph .ibr {
+		border-right: dotted 1px #ccc;
+		padding-right: $clmGutter;
+		padding-left: $clmGutter/2;
+	}
+    .ph {
+        width: 1200px;
+        max-width: 100%;
+        min-width: 768px;
+        margin: 0 auto;
+        padding: 0;
+        .clms {
+            float: left;
+        }
+    }
+    p {
+        line-height: 140%;
+    }
+    h2 {
+        line-height: 140%;
+    }
+}
+.ibuttons .button {
+    float: left;
+    margin-right: 8px;
+}
+body label.inline {
+    display: inline;
+    padding-left: 5px;
+}
+.ierror {
+    background: #e3a898;
+    padding: 15px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: #96280a;
+}
+.iinp {
+    margin: 8px 0;
+
+	label {
+		font-weight: bold;
+	}
+	.inp {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		display:block;
+		width:100%;
+	}
+}
+    #ilogin .c6 {
+        //box-sizing: border-box;
+        //-moz-box-sizing: border-box;
+        padding-right: $clmGutter/2;
+        padding-left: $clmGutter;
+        //float: left;
+        //width: 50%;
+    }
+

@@ -1,0 +1,119 @@
+.nav-bar { padding: 0;
+
+    &>li { float: left; display: block; position: relative; padding: 0; margin: 0; 
+
+      &.active { background: $seccolor;
+        &>a { color: $white; }
+        &:hover { background: $navhover; }	
+      }
+      &:hover { background: $navhover;  
+		
+		.flyout {
+			display:block;
+		}
+		a:first-child { 
+			color:$navhovercolor;
+		}
+	  }
+      &>a { color: $navcolor;  }
+      ul { margin-bottom: 0; }
+      .flyout { display: none; }
+
+      &.has-flyout {
+		&:hover>a:first-child {
+			z-index:42;	
+			
+		}
+        &>a:first-child { padding-right: 26px; position: relative;
+          &:after { @include cssTriangle(6px,#fff, top); position: absolute; right: 8px; top: 17px; }
+        }
+        &>a.flyout-toggle { position: absolute; right: 0; top: 0; padding: 22px; z-index: 42; display: block; }
+        &.is-touch {
+          &>a:first-child { padding-right: 55px;}
+          &>a.flyout-toggle { border-left: 1px dashed #666; }
+        }
+      }
+    }
+
+    &>li>a:first-child { position: relative; padding: $navpadding; display: block; text-decoration: none; font-size: ms(0); }
+    &>li>input { margin: 0 10px; }
+
+    &.vertical {
+
+      &>li { float: none; 
+
+        &.has-flyout>a:first-child:after { @include cssTriangle(10px, #222, left); }
+        .flyout { left: 100%; top: -1px;
+          &.right { left: auto; right: 100%; }
+        }
+      }
+    }
+
+  }
+
+  .flyout { padding: 0px; margin: 0; position: absolute;top:20px; left: 0px; width: $navFlyoutBaseWidth; z-index: 40; @include box-shadow(0 1px 5px rgba(#000, 0.5)); 
+
+    p { font-size: ms(0) - 1; }
+    *:first-child { margin-top: 0; } /* remove margin on any first-child element */
+    *:last-child { margin-bottom: 0; } /* remove margin on last element */
+
+    &.small { width: $navFlyoutBaseWidth / 1.5; }
+    &.large { width: $navFlyoutBaseWidth * 1.75; }
+	&.big { 
+		width:$navFlyoutBaseWidth * 2.5; 
+		padding:0;
+		>ul {
+			float:left;
+		}
+	}
+
+    &.right { left: auto; right: -2px; }
+    &.up { top: auto; }
+
+  }
+
+  ul.flyout, .nav-bar li ul { padding: 0; list-style: none;
+
+    li { 
+      a { display: block; font-size: ms(0); height: auto; line-height: 1; padding: 15px 20px;
+        &:hover { background: $navbarbg; color: #333; }
+      }
+      &.active { margin-top: 0; 
+        a {  border: none; color: #fff; height: auto; margin: 0; position: static; top: 0; }
+      }
+    }
+
+  }
+
+
+  /* Mobile Styles */
+  @media only screen and (max-device-width: 1280px) {
+    .touch .nav-bar li.has-flyout>a { padding-right: 36px !important; }
+  }
+
+  @media only screen and (max-width: 1024) and (min-width: 768) {
+    
+    .touch .nav-bar li.has-flyout>a.flyout-toggle { padding: 20px !important; }
+    .touch .nav-bar li.has-flyout>a { padding-right: 36px !important; }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .nav-bar { height: auto;
+
+      &>li { float: none; display: block; border-right: none; }
+      &>li>a.main { text-align: left; border-top: 1px solid #ddd; border-right: none; }
+      &>li:first-child>a.main { border-top: none; }
+      &>li.has-flyout>a.flyout-toggle { position: absolute; right: 0; top: 0; padding: 22px; z-index: 2; display: block; }
+      &>li.has-flyout.is-touch>a.flyout-toggle span { content: ""; width: 0; height: 0; display: block; }
+      &>li.has-flyout>a.flyout-toggle:hover span { border-top-color: #141414; }
+      &.vertical>li.has-flyout>.flyout { left: 0; }
+    }
+
+    .flyout { position: relative; width: 100% !important; top: auto; margin-right: -2px; border-width: 1px 1px 0 1px;
+
+      &.right { float: none; right: auto; left: -1px; }
+      &.small, &.large { width: 100% !important; }
+      p:last-child { margin-bottom: 18px; }
+    }
+
+  }

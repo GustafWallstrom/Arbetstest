@@ -1,0 +1,6 @@
+@media print {
+     p a[href]:after { content: ' (' attr(href) ') '; }
+	 .no-print {
+		display:none;
+	 }
+}

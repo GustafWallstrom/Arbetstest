@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<WebControlsConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ReloadApplicationOnSave>false</ReloadApplicationOnSave>
+  <FileShareMailSetting>
+    <Default>
+      <LanguageId>0</LanguageId>
+      <Subject>Ny fil är skickad</Subject>
+      <Template>fileshare.tpl</Template>
+      <MasterTemplate>master.mtpl</MasterTemplate>
+      <Type>Default</Type>
+    </Default>
+    <Languages />
+  </FileShareMailSetting>
+</WebControlsConfig>

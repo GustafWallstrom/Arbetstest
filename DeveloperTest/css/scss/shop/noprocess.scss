@@ -1,0 +1,462 @@
+.filter-cnt label
+{
+    font-weight:bold;
+}
+
+.filter-cnt 
+{
+    margin-bottom:5px;
+}
+
+.fld-iscompany label {
+	font-weight:bold;
+}
+
+div.fld-iscompany {
+	clear:both;
+	width:500px;
+	float:none;
+}
+
+#registerdata .chkbox {
+	height: 14px;
+}
+
+.field select {
+	 padding: 4px 6px;
+	 width:251px;
+}
+
+#registerdata .chkbox input {
+	float: left;
+    margin-right: 9px;
+    width: auto;
+}
+
+.group-button, .buy-cnt input, .buy-cnt button, .shop-login-button, .shop-cnt-box buitton, .shop-cnt-box a, .shop-cnt-box button, .login-cnt button, #orderoverview .shop-login, #orderoverview .shop-register, #orderoverview .shop-logout
+{
+	margin:5px 5px 5px 0px;	
+	cursor:pointer;
+	font-size: 12px;
+	display:inline-block;
+	color: #050505;
+	padding: 4px 12px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ebebeb 49%,
+		#dbdbdb 50%,
+		#c5c5c5);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffffff),
+		color-stop(0.50, #ebebeb),
+		color-stop(0.50, #dbdbdb),
+		to(#b5b5b5));
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: 1px solid #949494;
+	-moz-box-shadow:
+		0px 1px 2px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 2px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	
+	/*
+	
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+		*/
+}
+#orderoverview .shop-login a
+{
+    background-color: transparent;
+    background-image: url("key2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-left: 21px;
+}
+#orderoverview .shop-login
+{
+    float:left;
+    margin-right:10px;
+}
+#orderoverview .shop-register a
+{
+    background-color: transparent;
+    background-image: url("users3_add.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-left: 21px;
+}
+
+#orderoverview .shop-logout a
+{
+    background-color: transparent;
+    background-image: url("exit.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-left: 21px;
+}
+.cart-overview
+{
+    margin-bottom:20px;
+}
+
+
+.shop-cnt-box buitton {
+	float:right;
+	
+}
+
+.prodleft 
+{
+    width:240px;
+    padding-right:15px;
+    margin-right:15px;
+    border-right:1px solid #aaa;
+    padding-bottom:15px;
+    float:left;
+}
+
+.prodright 
+{
+    width:400px;
+    float:left;
+}
+
+.fieldgroup 
+{
+    border-top:solid 1px #ccc;
+    padding:10px;
+}
+
+.fieldgroup  strong {
+	font-size:16px;
+	margin-bottom:10px;
+	display:block;
+}
+
+.fieldgroup:first-child
+{
+	border-top:none;
+}
+
+.field 
+{
+    margin-bottom:5px;
+    position:relative;
+}
+.field label {
+	display:block;
+}
+
+.wdshoptitle  {
+	font-weight:bold;
+	display:block;
+}
+
+.field input, #availProds, #availLayers
+{
+    width:237px;
+    padding:4px 6px;
+}
+
+.shop-login-bg .chkbox input 
+{
+    width:auto;
+	margin-top:23px;
+}
+.shop-login-bg .chkbox label
+{
+    display:inline-block;
+    padding-left:8px;
+}
+
+.field .req-fld label
+{
+    background-color:Red;
+    color:#fff;
+}
+
+.field {
+	float:left;
+	height:50px;
+	margin-right:20px;
+	width:250px;
+}
+
+.fld-orgnr {
+	clear:both;
+	float:none;
+}
+
+.field span.field-error
+{
+    /*
+	background-color: #FDFDFD;
+    border: 2px solid #FCEFA1;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #000000;
+    display: block;
+    left: 185px;
+    padding: 6px;
+    position: absolute;
+    top: -14px;
+    width: 230px;*/
+	color:#faaa2c;
+}
+
+input.failed-validation {
+	outline:solid 3px #faaa2c;
+}
+/*
+.field span.chkbox
+{
+    background-color:transparent;
+    display:inline;
+    padding:0;
+    position:static;
+}
+*/
+.shop-login-bg
+{
+    width:640px;
+	position:relative;
+    margin:0 auto;
+	border:3px solid transparent;
+    z-index:999;
+    border-radius:4px;
+    box-shadow:0 0 18px rgba(0,0,0,0.8);
+}
+
+.shop-login-bg input, .s-batch input
+{
+    border:solid 1px #bbb;
+	padding:4px 6px;
+    width:240px;
+    margin-bottom:10px;
+}
+
+.shop-login-bg label, .s-batch label, .shop-login-cnt label
+{
+    font-weight:bold;
+}
+
+.shop-login-bg a
+{
+    display:block;
+}
+
+.shop-login-button
+{
+    float:right;
+   
+}
+
+.shop-login-bottom
+{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(0,0,0,0.4);
+	z-index:999;	
+}
+
+.ie .shop-box-cnt {
+	
+	border:solid 3px #666;
+}
+
+.ie .field {
+	margin-right:10px;
+}
+.shop-login-box
+{
+    
+}
+
+
+#proddata div.wd-prodsml input
+{
+	width:90px;
+	margin-right:8px;
+}
+
+#proddata div.wd-prodsml2
+{
+	float: left;
+	width: 120px;
+	clear: none;
+	padding-top: 0;
+	margin-right: 10px;
+}
+
+#proddata .wd-hidden
+{
+	display: none;
+}
+
+#proddata div.wd-prodsml2 label
+{
+	float: none;
+	display: block;
+	width: 93%;
+}
+
+#proddata div.wd-prodsml2 input
+{
+	width:93%;
+	margin-right:8px;
+	float: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#proddata div.wd-prodsml2 .wd-info
+{
+	background: url("/jq/images/spriteme1.png") no-repeat scroll -13px -48px transparent;
+	display: inline-block;
+	padding-left: 16px;
+	overflow: hidden;
+	width: 0;
+	height: 16px;
+	float: right;
+	cursor: help;
+}
+
+#proddata div.wd-prodsml2d
+{
+	width: 240px;
+}
+
+.validationSummay {
+	background-color:#FFF1A8;
+	border:solid 1px #F0E198;
+	padding:10px;
+}
+
+.customerediting {
+	background-color:#fff;
+	border:solid 1px #bbb;
+	padding:10px;
+}
+
+input.lookupButton {
+	width:auto;
+	margin-top:-3px;
+	margin-left:0px;
+}
+
+.shop-cnt-box {
+	padding:40px;
+	border-radius:4px;
+	background-color:#fff;
+}
+
+.fld-orgnr {
+	width:400px;
+}
+
+.shop-register-box {
+	max-height:480px;
+	margin-bottom:20px;
+}
+
+.hiddenLogin {
+	display:none;
+}
+
+.shop-cnt-box label {
+	display:block;
+}
+
+.shop-login-close {
+	position:absolute;
+	top:4px;
+	width:36px;
+	height:36px;
+	background:transparent url(close.png) no-repeat 0 0;
+	right:4px;
+	cursor:pointer;
+}
+.shop-login-close span {
+	display:none;
+}
+
+
+
+
+
+
+
+#propplus {
+margin-top:10px;
+margin-bottom:6px;
+float:none;
+clear:both;
+}
+
+.shop-cnt-box a {
+	float:right;
+}
+
+.shop-login-cnt {
+	width:600px;
+	margin:30px auto;
+	
+}
+
+.login-cnt {
+	border-radius:10px;
+	background-color:#fff;
+	padding:30px;
+	position:relative;
+}
+
+.login-field label{
+	display:block;
+	font-weight:bold;
+	margin-bottom:4px;
+}
+
+#loginCnt, #passwordCnt {
+	width:400px;
+}
+.shoplogin-box, .shoppass-box {
+	
+}
+
+.shoplogin-box input, .shoppass-box input{
+	padding:5px;
+	width:250px;
+}
+
+
+.login-cnt fieldset
+{
+	border: 0;
+	border-top: 1px solid #E4E4E4;
+	margin: 15px 0 3px;
+	padding: 8px 0 0;
+}
+
+.login-cnt fieldset legend
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0 5px 0 0;
+}
+
+.login-cnt hr
+{
+	border: 0;
+	border-top: 1px solid #E4E4E4;
+	margin: 7px 0;
+}

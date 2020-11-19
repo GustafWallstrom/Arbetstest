@@ -1,0 +1,15 @@
+form * { @include box-sizing(border-box); }
+html, body, ul, li {
+	margin:0;padding:0;
+}
+a img {
+	border:0;
+}
+html {
+	font-size:62.5%;
+}
+body { background: $pagebg; font-family: $bodyFontFamily; color: $bodyFontColor; -webkit-font-smoothing: antialiased;  font-size:$fontSize}
+a {
+	text-decoration:none;
+	color:$linkcolor;
+}

@@ -1,0 +1,8 @@
+2020-11-19 08:35:37;Info;Indexing started<br /><b>Text: Rebuilding searchindex
+2020-11-19 08:35:37;Info;Run<br /><b>Text: Rebuilding started
+2020-11-19 08:35:38;Warning;No text found<br /><b>Text: No text on page: /testsida/testavundersida__12, page not indexed
+2020-11-19 08:35:38;Warning;No text found<br /><b>Text: No text on page: /, page not indexed
+2020-11-19 08:35:38;Warning;No text found<br /><b>Text: No text on page: /testsida/testavundersida2__13, page not indexed
+2020-11-19 08:35:38;Warning;No text found<br /><b>Text: No text on page: /inloggad__5, page not indexed
+2020-11-19 08:35:38;Info;Indexing completed<br /><b>Text: Total documents in current index is 6
+2020-11-19 08:35:39;Info;Run<br /><b>Text: Index rebuilt in 1,4718204 seconds.
