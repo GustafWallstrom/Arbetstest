@@ -21,12 +21,12 @@
                         <asp:TextBox runat="server" ID="exContactPerson"></asp:TextBox>
                         <asp:Label runat="server" AssociatedControlID="exContactPerson" Text="Kontaktperson"></asp:Label>
                     </div>
-                    <div style="display:flex;flex-direction:row">
-                        <div class="field">
+                    <div id="phone_row">
+                        <div class="field" id="phone1">
                             <asp:TextBox runat="server" ID="exPhoneOne"></asp:TextBox>
                             <asp:Label runat="server" AssociatedControlID="exPhoneOne" Text="Telefon 1"></asp:Label>
                         </div>
-                        <div class="field">
+                        <div class="field" id="phone2">
                             <asp:TextBox runat="server" ID="exPhoneTwo"></asp:TextBox>
                             <asp:Label runat="server" AssociatedControlID="exPhoneTwo" Text="Telefon 2"></asp:Label>
                         </div>

@@ -27,17 +27,24 @@ Uppgifter
 Fälten för telefonnummer får bara innehålla siffror (0-9), mellanslag samt plus- och minus-tecken (+-). Dvs "+46700-12 12 12" är giltigt men inte "0700:12_12_12".
 Första fältet för första telefonnumret måste anges (får ej lämnas tomt), däremot får andra fältet lämnas tomt.
  
+Kända buggar
+6. Sökningen kan ibland visa samma resultat flera gånger om samma information finns i mer än en property i `LogItem`. Hitta och åtgärda felet.
+ 
+
 --------------- FÄRDIGT! -------------------------
+
+7. Det går inte att ta bort en logg. Vad är det som orsakar detta? Åtgärda felet.
+
+
+HUR? Flyttade in anropet i funktionen, så att inte requesten skickas före värdet är tilldelat. Anropet var inte asynkront med resten... VAR? AllLogItems.ascx
+
+
+--------------------------------------------------
 
 5. Designa om skapaformuläret:
     1. Fälten för telefonnummer ska ligga bredvid varandra
 
 
-HUR? flexbox row med omslutande div.
+HUR? flexbox -> flexdirection row som style på en omslutande div. VAR? FormPage.aspx och css:en
 
 --------------------------------------------------
- 
-Kända buggar
-6. Sökningen kan ibland visa samma resultat flera gånger om samma information finns i mer än en property i `LogItem`. Hitta och åtgärda felet.
- 
-7. Det går inte att ta bort en logg. Vad är det som orsakar detta? Åtgärda felet.

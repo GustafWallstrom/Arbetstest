@@ -38,10 +38,30 @@
             <div class="close"></div>
             <div class="btn edit" id="editrow">Redigera</div>
             <div class="btn del" id="delrow">Ta bort</div>
+            <div class="ctable">
+                <div style="display:flex; flex-direction:row">
+                    <div>Id</div>
+                    <div>Guid</div>
+                    <div>Datum</div>
+                    <div>Svarande</div>
+                    <div>Företag</div>
+                    <div>Kontaktperson</div>
+                    <div>Telefon 1</div>
+                    <div>Telefon 2</div>
+                    <div>E-post</div>
+                    <div>Fråga</div>
+                    <div>Svar</div>
+                    <div>Åtgärd/kommentar</div>
+                    <div>Redigerad av</div>
+                </div>
+                <div class="ctable">
+
+                </div>
+            </div>
             <table class="ctable" id="ctable">
                 <thead>
                     <tr>
-                        <th>Ide</th>
+                        <th>Id</th>
                         <th>Guid</th>
                         <th>Datum</th>
                         <th>Svarande</th>

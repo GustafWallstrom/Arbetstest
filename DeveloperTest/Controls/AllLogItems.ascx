@@ -114,23 +114,24 @@
     }
 
     element.doc.on('click', '.openconflict', function () {
-      let id = $(this).data('id') - 0;
-      helper.logService.get(id).then(openLog);
-    });
+        let id = $(this).data('id') - 0;
+        helper.logService.get(id).then(openLog);
 
-    element.doc.on('click', '#delrow', () => {
-      let id = $(this).data('id');
-      let text = 'Är du säker på att du vill ta bort hela raden?\nValet är permanent och går inte att ångra.';
+        element.doc.on('click', '#delrow', () => {
+            let id = $(this).data('id');
+          let text = 'Är du säker på att du vill ta bort hela raden?\nValet är permanent och går inte att ångra.';
 
-      if (confirm(text)) {
-        helper.logService.delete(id).then(removed => {
-          if (removed) {
-            location.reload();
-          } else {
-            alert('Kunde inte ta bort rad, försök igen');
+            if (confirm(text)) {
+                helper.logService.delete(id).then(removed => {
+                if (removed) {
+                  location.reload();
+              } else {
+                alert('Kunde inte ta bort rad, försök igen');
+              }
+            });
           }
         });
-      }
+
     });
 
     element.doc.on('click', '#editrow', function () {

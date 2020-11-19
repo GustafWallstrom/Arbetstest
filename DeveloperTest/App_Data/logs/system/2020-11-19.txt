@@ -7,3 +7,15 @@
 2020-11-19 09:45:50;Info;Application started<br /><b>Text: New instance created
 2020-11-19 09:48:56;Info;Application started<br /><b>Text: New instance created
 2020-11-19 09:54:16;Info;Application started<br /><b>Text: New instance created
+2020-11-19 10:12:54;Info;Application started<br /><b>Text: New instance created
+2020-11-19 10:30:43;Info;Application started<br /><b>Text: New instance created
+2020-11-19 10:31:56;Info;Application started<br /><b>Text: New instance created
+2020-11-19 10:38:47;Info;Application started<br /><b>Text: New instance created
+2020-11-19 10:43:33;Info;Application started<br /><b>Text: New instance created
+2020-11-19 11:01:38;Info;Application started<br /><b>Text: New instance created
+2020-11-19 14:01:24;Warning;Slow response - 16s<br /><b>Text: The requested page: /inloggad__5 has a responsetime that was to slow
+2020-11-19 14:50:01;Info;Application started<br /><b>Text: New instance created
+2020-11-19 14:58:11;Info;Application started<br /><b>Text: New instance created
+2020-11-19 15:01:58;Info;Application started<br /><b>Text: New instance created
+2020-11-19 15:19:17;Info;Application started<br /><b>Text: New instance created
+2020-11-19 15:33:20;Info;Application started<br /><b>Text: New instance created

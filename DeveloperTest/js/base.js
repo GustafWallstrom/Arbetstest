@@ -10,8 +10,8 @@
    * @returns {Promise<T>}
    * @template T
    */
-  function request(method, param = {}) {
-    return new Promise((resolve, reject) => {
+    function request(method, param = {}) {
+        return new Promise((resolve, reject) => {
       ar(apiUrl + method, param, resolve, reject);
     });
   }
@@ -29,7 +29,7 @@
       let args = [];
 
       for (let i = 0; i < arguments.length; i++) {
-        args.push(arguments[i]);
+          args.push(arguments[i]);
       }
 
       const later = () => {
