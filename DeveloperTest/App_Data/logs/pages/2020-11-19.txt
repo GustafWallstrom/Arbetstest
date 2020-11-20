@@ -101,3 +101,5 @@
 2020-11-19 15:37:44;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
 2020-11-19 15:40:13;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
 2020-11-19 15:40:58;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
+2020-11-19 15:48:10;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
+2020-11-19 16:01:16;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found

@@ -22,14 +22,23 @@ Uppgifter
 2. Konvertera tabell (med header i master) mot div:ar eller liknande för bl.a. underlätta framtida mobilanpassning.
  
 3. Utöka med en ny funktion: sortera efter fråga, löpnummer, datum.
- 
-4. Gör validering för inmatningsfält.
-Fälten för telefonnummer får bara innehålla siffror (0-9), mellanslag samt plus- och minus-tecken (+-). Dvs "+46700-12 12 12" är giltigt men inte "0700:12_12_12".
-Första fältet för första telefonnumret måste anges (får ej lämnas tomt), däremot får andra fältet lämnas tomt.
- 
+  
 Kända buggar
 6. Sökningen kan ibland visa samma resultat flera gånger om samma information finns i mer än en property i `LogItem`. Hitta och åtgärda felet.
  
+
+
+
+
+--------------- NÄSTAN FÄRDIGT! -------------------------
+
+Notifiera användaren om vad som är fel...
+
+4. Gör validering för inmatningsfält.
+Fälten för telefonnummer får bara innehålla siffror (0-9), mellanslag samt plus- och minus-tecken (+-). Dvs "+46700-12 12 12" är giltigt men inte "0700:12_12_12".
+Första fältet för första telefonnumret måste anges (får ej lämnas tomt), däremot får andra fältet lämnas tomt.
+
+
 
 --------------- FÄRDIGT! -------------------------
 

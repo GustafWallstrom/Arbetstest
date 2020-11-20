@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections;
 using System.Configuration;
 using System.Data;
@@ -22,6 +23,37 @@ namespace DeveloperTest.Templates
                 var eid = GetEditId();
                 if (eid.HasValue)
                     FillItemData(eid.Value);
+            }
+        }
+
+        protected void inputAlert(String message)
+        {
+            Debug.WriteLine(message);
+            string script = "<script type=\"text/javascript\">alert('" + message + "');</script>";
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "Alert", script);
+        }
+
+        private bool CheckPhoneNumber(String n1, String n2)
+        {
+            var phoneNumber1 = n1;
+            var phoneNumber2 = n2;
+
+            bool firstIsNumeric = int.TryParse(phoneNumber1.Replace("0", "").Replace("+", ""), out int firstN);
+            bool secondIsNumeric = int.TryParse(phoneNumber2.Replace("-", "").Replace("+", ""), out int secondN);
+
+            if (phoneNumber1.Length < 1)
+            {
+                inputAlert("Telefon 1 måste fyllas i!");
+                return false;
+            }
+            else if((firstIsNumeric && phoneNumber2.Length < 1) || (firstIsNumeric && secondIsNumeric))
+            {
+                return true;
+            }
+            else 
+            { 
+                inputAlert("Telefonnummer får bara innehålla siffrorna 0-9, - och +.");
+                return false;
             }
         }
 
@@ -66,19 +98,22 @@ namespace DeveloperTest.Templates
                 };
             }
 
-            logItem.Company = excompany.Text;
-            logItem.Contact = exContactPerson.Text;
-            logItem.Phone = exPhoneOne.Text;
-            logItem.PhoneAlt = exPhoneTwo.Text;
-            logItem.Email = exEmail.Text;
-            logItem.Question = exQuestion.Text;
-            logItem.Answer = exAnswer.Text;
-            logItem.Comment = exComment.Text;
-            logItem.Date = DateTime.Now;
+            if (CheckPhoneNumber(exPhoneOne.Text, exPhoneTwo.Text))
+            {
+                logItem.Company = excompany.Text;
+                logItem.Contact = exContactPerson.Text;
+                logItem.Phone = exPhoneOne.Text;
+                logItem.PhoneAlt = exPhoneTwo.Text;
+                logItem.Email = exEmail.Text;
+                logItem.Question = exQuestion.Text;
+                logItem.Answer = exAnswer.Text;
+                logItem.Comment = exComment.Text;
+                logItem.Date = DateTime.Now;
 
-            logItem.Save();
+                logItem.Save();
 
-            Response.Redirect(CustomPage.Get(6).PageLink);
+                Response.Redirect(CustomPage.Get(6).PageLink);
+            }
         }
     }
 }
