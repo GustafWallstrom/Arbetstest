@@ -17,6 +17,23 @@
         <div class="selyear">
             <asp:Label runat="server" ID="exyearlbl" AssociatedControlID="exyearsel" Text="Välj år"></asp:Label>
             <asp:DropDownList runat="server" ID="exyearsel" AutoPostBack="true" CausesValidation="false" OnSelectedIndexChanged="exyearsel_SelectedIndexChanged"></asp:DropDownList>
+            
+        </div>
+        <div class="selyear">
+            <div id="sortingcontainer">
+                <asp:Label runat="server" ID="sortvaluelbl" AssociatedControlID="sortvalue" Text="Sortera"></asp:Label>
+                <asp:DropDownList ID="sortvalue" runat="server" AutoPostBack="true" OnSelectedIndexChanged="sortvalue_SelectedIndexChanged" style="margin-right: 2px">
+                    <asp:ListItem Enabled="true" Text="Id" Value="0"></asp:ListItem>
+                    <asp:ListItem Text="Fråga" Value="1"></asp:ListItem>
+                    <asp:ListItem Text="Löpnummer" Value="2"></asp:ListItem>
+                    <asp:ListItem Text="Datum" Value="3"></asp:ListItem>
+                </asp:DropDownList>
+
+                <asp:DropDownList ID="sorttype" runat="server" AutoPostBack="true" OnSelectedIndexChanged="sortvalue_SelectedIndexChanged">
+                    <asp:ListItem Enabled="true" Text="Fallande" Value="0"></asp:ListItem>                
+                    <asp:ListItem Text="Stigande" Value="1"></asp:ListItem>
+                </asp:DropDownList>
+            </div>
         </div>
     </div>
 </div>

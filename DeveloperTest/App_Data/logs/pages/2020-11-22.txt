@@ -1,0 +1,8 @@
+2020-11-22 07:18:19;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
+2020-11-22 07:18:52;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
+2020-11-22 08:10:00;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
+2020-11-22 08:10:46;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
+2020-11-22 08:19:48;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
+2020-11-22 08:20:23;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
+2020-11-22 08:20:43;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found
+2020-11-22 09:51:14;Warning;Url not found<br /><b>Text: The requested url: http://localhost:4199/favicon.ico was not found

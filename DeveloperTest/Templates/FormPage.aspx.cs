@@ -38,7 +38,7 @@ namespace DeveloperTest.Templates
             var phoneNumber1 = n1;
             var phoneNumber2 = n2;
 
-            bool firstIsNumeric = int.TryParse(phoneNumber1.Replace("0", "").Replace("+", ""), out int firstN);
+            bool firstIsNumeric = int.TryParse(phoneNumber1.Replace("-", "").Replace("+", ""), out int firstN);
             bool secondIsNumeric = int.TryParse(phoneNumber2.Replace("-", "").Replace("+", ""), out int secondN);
 
             if (phoneNumber1.Length < 1)

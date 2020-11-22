@@ -1,0 +1,1 @@
+2020-11-22 07:18:07;Info;Task "CleanUpTask" run as expected. With result: CleanUpTask run

@@ -24,7 +24,7 @@
                     <div id="phone_row">
                         <div class="field" id="phone1">
                             <asp:TextBox runat="server" ID="exPhoneOne"></asp:TextBox>
-                            <asp:Label runat="server" AssociatedControlID="exPhoneOne" Text="Telefon 1"></asp:Label>
+                            <asp:Label runat="server" AssociatedControlID="exPhoneOne">Telefon 1 <span style="color: rgb(226, 226, 226)">*required</span></asp:Label>
                         </div>
                         <div class="field" id="phone2">
                             <asp:TextBox runat="server" ID="exPhoneTwo"></asp:TextBox>

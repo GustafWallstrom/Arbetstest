@@ -78,5 +78,84 @@ namespace DeveloperTest.Controls
             exItems.DataSource = items;
             exItems.DataBind();
         }
+
+        protected void sortvalue_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+                return;
+
+            int sortChoise = Int32.Parse(sortvalue.SelectedValue);
+            String sortType = sorttype.SelectedValue;
+            var items = LogItemHelper.AllLogs.OrderByDescending(item => item.Id);
+
+            switch (sortChoise)
+            {
+                case 0:
+                    if (sortType == "0")
+                    {
+                        items = exyearsel.SelectedValue == "0"
+                        ? LogItemHelper.AllLogs.OrderByDescending(item => item.Id)
+                        : LogItemHelper.AllLogs.Where(x => x.Date.ToString("yyyy") == exyearsel.SelectedValue).OrderByDescending(p => p.Id);
+                    }
+                    else
+                    {
+                        items = exyearsel.SelectedValue == "0"
+                        ? LogItemHelper.AllLogs.OrderBy(item => item.Id)
+                        : LogItemHelper.AllLogs.Where(x => x.Date.ToString("yyyy") == exyearsel.SelectedValue).OrderBy(p => p.Id);
+                    }
+                    break;
+
+                case 1:
+
+                    if (sortType == "0")
+                    {
+                        items = exyearsel.SelectedValue == "0"
+                        ? LogItemHelper.AllLogs.OrderByDescending(item => item.Question)
+                        : LogItemHelper.AllLogs.Where(x => x.Date.ToString("yyyy") == exyearsel.SelectedValue).OrderByDescending(p => p.Question);
+                    }
+                    else
+                    {
+                        items = exyearsel.SelectedValue == "0"
+                        ? LogItemHelper.AllLogs.OrderBy(item => item.Question)
+                        : LogItemHelper.AllLogs.Where(x => x.Date.ToString("yyyy") == exyearsel.SelectedValue).OrderBy(p => p.Question);
+                    }
+                    break;
+
+                case 2:
+                    if (sortType == "0")
+                    {
+                        items = exyearsel.SelectedValue == "0"
+                        ? LogItemHelper.AllLogs.OrderByDescending(item => item.UniqueId)
+                        : LogItemHelper.AllLogs.Where(x => x.Date.ToString("yyyy") == exyearsel.SelectedValue).OrderByDescending(p => p.UniqueId);
+                    }
+                    else
+                    {
+                        items = exyearsel.SelectedValue == "0"
+                        ? LogItemHelper.AllLogs.OrderBy(item => item.UniqueId)
+                        : LogItemHelper.AllLogs.Where(x => x.Date.ToString("yyyy") == exyearsel.SelectedValue).OrderBy(p => p.UniqueId);
+                    }
+                    break;
+
+                case 3:
+
+                    if (sortType == "0")
+                    {
+                        items = exyearsel.SelectedValue == "0"
+                        ? LogItemHelper.AllLogs.OrderByDescending(item => item.Date)
+                        : LogItemHelper.AllLogs.Where(x => x.Date.ToString("yyyy") == exyearsel.SelectedValue).OrderByDescending(p => p.Date);
+                    }
+                    else
+                    {
+                        items = exyearsel.SelectedValue == "0"
+                        ? LogItemHelper.AllLogs.OrderBy(item => item.Date)
+                        : LogItemHelper.AllLogs.Where(x => x.Date.ToString("yyyy") == exyearsel.SelectedValue).OrderBy(p => p.Date);
+                    }
+                    break;
+
+            }
+
+            exItems.DataSource = items;
+            exItems.DataBind();
+        }
     }
 }

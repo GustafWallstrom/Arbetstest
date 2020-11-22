@@ -2288,7 +2288,8 @@ h1 {
 
 
 .selyear {
-    padding: 10px 0;
+    padding: 5px 0;
+    text-align: right;
 }
 
     .selyear label {
@@ -2297,6 +2298,13 @@ h1 {
         display: inline-block;
         margin-right: 20px;
     }
+
+#sortingcontainer {
+    display: flex;
+    flex-direction: row;
+    padding_ 50px;
+}
+
 
 .mt20 {
     margin-top: 20px;

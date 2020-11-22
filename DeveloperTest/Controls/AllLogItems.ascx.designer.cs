@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DeveloperTest.Controls {
-    
-    
-    public partial class AllLogItems {
-        
+namespace DeveloperTest.Controls
+{
+
+
+    public partial class AllLogItems
+    {
+
         /// <summary>
         /// exportAll control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace DeveloperTest.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button exportAll;
-        
+
         /// <summary>
         /// exyearlbl control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace DeveloperTest.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label exyearlbl;
-        
+
         /// <summary>
         /// exyearsel control.
         /// </summary>
@@ -38,7 +40,34 @@ namespace DeveloperTest.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList exyearsel;
-        
+
+        /// <summary>
+        /// sortvaluelbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label sortvaluelbl;
+
+        /// <summary>
+        /// sortvalue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList sortvalue;
+
+        /// <summary>
+        /// sorttype control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList sorttype;
+
         /// <summary>
         /// exItems control.
         /// </summary>

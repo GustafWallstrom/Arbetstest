@@ -21,7 +21,6 @@ Uppgifter
  
 2. Konvertera tabell (med header i master) mot div:ar eller liknande för bl.a. underlätta framtida mobilanpassning.
  
-3. Utöka med en ny funktion: sortera efter fråga, löpnummer, datum.
   
 Kända buggar
 6. Sökningen kan ibland visa samma resultat flera gånger om samma information finns i mer än en property i `LogItem`. Hitta och åtgärda felet.
@@ -29,18 +28,23 @@ Kända buggar
 
 
 
+--------------- FÄRDIGT! -------------------------
 
---------------- NÄSTAN FÄRDIGT! -------------------------
 
-Notifiera användaren om vad som är fel...
+3. Utöka med en ny funktion: sortera efter fråga, löpnummer, datum.
+
+HUR? Två dropdown-listor med val om ämne och fallande/stigande. "AllLogs" hämtas och sorteras efter valen tillsammans med "Year".
+Var? AllLogItems.ascx  AllItems.ascx.cs
+
+--------------------------------------------------
 
 4. Gör validering för inmatningsfält.
 Fälten för telefonnummer får bara innehålla siffror (0-9), mellanslag samt plus- och minus-tecken (+-). Dvs "+46700-12 12 12" är giltigt men inte "0700:12_12_12".
 Första fältet för första telefonnumret måste anges (får ej lämnas tomt), däremot får andra fältet lämnas tomt.
 
+HUR? Kontrollerade forumläret innan det skickas och om något av kriterierna inte uppfylls skickas en "alert" till användaren. VAR? FormPage.aspx, FormPage.aspx.cs
 
-
---------------- FÄRDIGT! -------------------------
+--------------------------------------------------
 
 7. Det går inte att ta bort en logg. Vad är det som orsakar detta? Åtgärda felet.
 
