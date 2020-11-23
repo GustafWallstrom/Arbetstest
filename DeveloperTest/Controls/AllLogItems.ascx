@@ -99,7 +99,8 @@
   ], function () {
     const element = {
       doc: $(document.body),
-      ctable: $('#ctable tbody'),
+      //ctable: $('#ctable tbody'),
+      ctable: $('#tablebody'),
       del: $('#delrow'),
       edit: $('#editrow'),
       csearch: $('#csearch'),
@@ -113,20 +114,20 @@
       element.edit.attr('data-id', logItem.Id);
       element.ctable.empty();
 
-      let tr = $('<tr />');
+      let trow = $('<div class="tablerow"/>');
 
-      Object.keys(logItem).filter(key => key !== '__type').forEach(key => {
-        let td = $('<td />');
-        let val = logItem[key];
+        Object.keys(logItem).filter(key => key !== '__type').forEach(key => {
+            let val = logItem[key];
+            let tcol = $('<div class="tablecol" />');  
 
-        if (moment.isDate(val)) {
-          val = moment(val).format("YYYY-MM-DD HH:mm");
-        }
+            if (moment.isDate(val)) {
+              val = moment(val).format("YYYY-MM-DD <br> HH:mm");
+            }
 
-        td.append(val).appendTo(tr);
+        tcol.append(val).appendTo(trow);
       });
 
-      tr.appendTo(element.ctable);
+      trow.appendTo(element.ctable);
       $('.cov').ov({ width: '1200' });
     }
 

@@ -14,27 +14,34 @@ Lösenord: dev
 Struktur
 I `js/base.js` finns ett globalt helperobjeket som har hand om API-anrop och returnerar `Promise` för anrop mot API:et `LogService.asmx`. Denna service lyssnar på `/api/logservice/[metodnamn]` via POST.
  
- 
+--------------- TODO: ---------------------------
+
 
 Uppgifter
 1. Loggar ska kunna hämtas och tas bort via `Guid` istället för löpnummer. Byt `int id` mot en lösning som använder `Guid` i metoderna `Get` och `Delete` i `LogService.asmx`. `LogItem` har redan stöd för `Guid` med property `UniqueId` med behöver även användas i API:et. Klienten behöver även anpassas för detta. Det finns en statisk metod i `Guid.TryParse` man kan använda för att parsa `string` till `Guid`.
  
-2. Konvertera tabell (med header i master) mot div:ar eller liknande för bl.a. underlätta framtida mobilanpassning.
- 
-  
+
 Kända buggar
 6. Sökningen kan ibland visa samma resultat flera gånger om samma information finns i mer än en property i `LogItem`. Hitta och åtgärda felet.
- 
 
 
 
 --------------- FÄRDIGT! -------------------------
 
 
+2. Konvertera tabell (med header i master) mot div:ar eller liknande för bl.a. underlätta framtida mobilanpassning.
+  
+HUR? Divar med "display:table" som stil.
+VAR? Master...
+VARFÖR? Lätt att manipulera och responsivt med table-attributet!
+
+--------------------------------------------------
+
 3. Utöka med en ny funktion: sortera efter fråga, löpnummer, datum.
 
 HUR? Två dropdown-listor med val om ämne och fallande/stigande. "AllLogs" hämtas och sorteras efter valen tillsammans med "Year".
-Var? AllLogItems.ascx  AllItems.ascx.cs
+VAR? AllLogItems.ascx  AllItems.ascx.cs
+VARFÖR? Dropdown för att det är tydligare än att klicka på ämnesraden enligt mig.
 
 --------------------------------------------------
 
@@ -43,21 +50,21 @@ Fälten för telefonnummer får bara innehålla siffror (0-9), mellanslag samt plus-
 Första fältet för första telefonnumret måste anges (får ej lämnas tomt), däremot får andra fältet lämnas tomt.
 
 HUR? Kontrollerade forumläret innan det skickas och om något av kriterierna inte uppfylls skickas en "alert" till användaren. VAR? FormPage.aspx, FormPage.aspx.cs
+VARFÖR? Funderade först om jag skulle göra en visuell återkoppling till användaren, men det känns övertydligt och plottrigt. Alertmeddelandet fyller behoven tillsammans med placeholdern på "Telefon 1".
 
 --------------------------------------------------
 
 7. Det går inte att ta bort en logg. Vad är det som orsakar detta? Åtgärda felet.
 
-
-HUR? Flyttade in anropet i funktionen, så att inte requesten skickas före värdet är tilldelat. Anropet var inte asynkront med resten... VAR? AllLogItems.ascx
-
+HUR? Flyttade in anropet i funktionen, så att inte requesten skickas före värdet är tilldelat. Innan jag fixade stod logg-ID som undefined. Anropet var inte asynkront med resten...
+VAR? AllLogItems.ascx
 
 --------------------------------------------------
 
 5. Designa om skapaformuläret:
     1. Fälten för telefonnummer ska ligga bredvid varandra
 
-
-HUR? flexbox -> flexdirection row som style på en omslutande div. VAR? FormPage.aspx och css:en
+HUR? flexbox -> flexdirection row som style på en omslutande div.
+VAR? FormPage.aspx och css:en
 
 --------------------------------------------------

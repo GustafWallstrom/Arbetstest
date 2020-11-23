@@ -39,46 +39,24 @@
             <div class="btn edit" id="editrow">Redigera</div>
             <div class="btn del" id="delrow">Ta bort</div>
             <div class="ctable">
-                <div style="display:flex; flex-direction:row">
-                    <div>Id</div>
-                    <div>Guid</div>
-                    <div>Datum</div>
-                    <div>Svarande</div>
-                    <div>Företag</div>
-                    <div>Kontaktperson</div>
-                    <div>Telefon 1</div>
-                    <div>Telefon 2</div>
-                    <div>E-post</div>
-                    <div>Fråga</div>
-                    <div>Svar</div>
-                    <div>Åtgärd/kommentar</div>
-                    <div>Redigerad av</div>
+                <div class="tablerow" id="tablehead">
+                    <div class="tableheadcell">Id</div>
+                    <div class="tableheadcell">Guid</div>
+                    <div class="tableheadcell">Datum</div>
+                    <div class="tableheadcell">Svarande</div>
+                    <div class="tableheadcell">Företag</div>
+                    <div class="tableheadcell">Kontaktperson</div>
+                    <div class="tableheadcell">Telefon 1</div>
+                    <div class="tableheadcell">Telefon 2</div>
+                    <div class="tableheadcell">E-post</div>
+                    <div class="tableheadcell">Fråga</div>
+                    <div class="tableheadcell">Svar</div>
+                    <div class="tableheadcell">Åtgärd/<br />kommentar</div>
+                    <div class="tableheadcell">Redigerad av</div>
                 </div>
-                <div class="ctable">
-
+                <div id="tablebody">
                 </div>
             </div>
-            <table class="ctable" id="ctable">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Guid</th>
-                        <th>Datum</th>
-                        <th>Svarande</th>
-                        <th>Företag</th>
-                        <th>Kontaktperson</th>
-                        <th>Telefon 1</th>
-                        <th>Telefon 2</th>
-                        <th>E-post</th>
-                        <th>Fråga</th>
-                        <th>Svar</th>
-                        <th>Åtgärd/kommentar</th>
-                        <th>Redigerad av</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
         </div>
     </form>
 

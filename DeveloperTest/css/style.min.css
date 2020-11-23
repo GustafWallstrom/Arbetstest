@@ -2327,7 +2327,44 @@ h1 {
 .ctable{
     background-color: #f9f9f9;
     padding: 10px;
+    width: 100%;
+    display: table;
 }
+
+.tablecol {
+    padding: 10px;
+    margin: 2px;
+    background-color: white;
+    display: table-cell;
+    border: solid;
+    border-color: #f9f9f9;
+}
+
+.tableheadcell {
+    background-color: #f9f9f9;
+    font-size:smaller;
+    font-weight: bold;
+    display: table-cell !important;
+    padding: 10px;
+    margin: 2px;
+}
+
+.tablerow #tablehead {
+   display: table-header-group;
+}
+
+
+.tablerow {
+    display: table-row;
+    background-color: #f9f9f9;
+}
+
+#tablebody {
+    min-height: 10px;
+    display: table-row-group;
+    padding:10px;
+}
+
 
 /*
 .ctable th {

@@ -1,0 +1,6 @@
+2020-11-23 07:05:34;Info;Application started<br /><b>Text: New instance created
+2020-11-23 07:31:05;Info;Application started<br /><b>Text: New instance created
+2020-11-23 07:47:27;Info;Application started<br /><b>Text: New instance created
+2020-11-23 08:12:55;Info;Application started<br /><b>Text: New instance created
+2020-11-23 08:24:06;Info;Application started<br /><b>Text: New instance created
+2020-11-23 08:45:31;Info;Application started<br /><b>Text: New instance created
